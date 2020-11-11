@@ -8,6 +8,11 @@ body {
     color: white;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
 }
 header {
     font-size: 2rem;
@@ -17,13 +22,19 @@ header,
 form {
     min-height: 20vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.input {
+    margin-bottom: 1rem;
+}
+
 form input,
 form button {
     padding: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: none;
     background: white;
 }
@@ -38,13 +49,15 @@ form button:hover {
     color: white;
 }
 .todo-container {
+    margin: 1rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .todo-list {
-    min-width: 30%;
+    min-width: 20rem;
     list-style: none;
 }
 
@@ -59,7 +72,9 @@ form button:hover {
     transition: all 1s ease;
 }
 .filter-todo {
+    display: flex;
     padding: 1rem;
+    background-color: white;
 }
 .todo li {
     flex: 1;
@@ -110,9 +125,9 @@ select {
 
 /* Custom Select */
 .select {
-    margin: 1rem;
     position: relative;
     overflow: hidden;
+    background-color: white;
 }
 select {
     color: #ff6f47;
